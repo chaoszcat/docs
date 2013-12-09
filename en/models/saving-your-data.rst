@@ -267,6 +267,8 @@ options may be used:
 *  ``fieldList``: Equivalent to the $fieldList parameter in Model::save()
 *  ``deep``: (since 2.1) If set to true, also associated data is saved, see also saveAssociated
 * ``counterCache`` (since 2.4) Boolean to control updating of counter caches (if any)
+* ``callbacks`` Set to false to disable callbacks. Using 'before' or 'after'
+  will enable only those callbacks.
 
 For saving multiple records of single model, $data needs to be a
 numerically indexed array of records like this::
